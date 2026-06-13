@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dilpreet Singh Saini | Creative Developer</title>
+  <meta name="description" content="Portfolio of Dilpreet Singh Saini - Designing Experiences, Engineering Solutions">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ff4532'/><text x='50' y='72' font-family='Arial, sans-serif' font-size='70' font-weight='bold' fill='%23ffffff' text-anchor='middle'>D</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+</head>
+<body>
+  
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <nav class="nav-bar">
+    <a href="#home" class="logo">DILPREET.</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link" data-hover="ABOUT">ABOUT</a>
+      <a href="#work" class="nav-link" data-hover="WORK">WORK</a>
+      <a href="#contact" class="nav-link" data-hover="CONTACT">CONTACT</a>
+    </div>
+  </nav>
+
+  <main class="main-wrapper">
+    
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-title-wrapper">
+          <h1 class="hero-title hero-title-1">DESIGNING</h1>
+          <h1 class="hero-title hero-title-2">EXPERIENCES.</h1>
+          <h1 class="hero-title hero-title-3"><span class="accent">ENGINEERING</span></h1>
+          <h1 class="hero-title hero-title-4">SOLUTIONS.</h1>
+        </div>
+        <div class="hero-bottom">
+          <p class="hero-subtitle">FULL-STACK DEVELOPER BASED IN AHMEDABAD</p>
+          <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative background elements -->
+      <div class="gradient-blob blob-1"></div>
+      <div class="gradient-blob blob-2"></div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="container">
+        <p class="about-text split-text">
+          I WORK AT THE INTERSECTION OF ENGINEERING RIGOR AND THOUGHTFUL DESIGN. MY FOCUS IS ON WRITING CODE THAT'S READABLE, SCALABLE, AND A PLEASURE TO WORK WITH. I BELIEVE GREAT SOFTWARE STARTS WITH UNDERSTANDING THE PROBLEM DEEPLY.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS MARQUEE -->
+    <section class="marquee-section">
+      <div class="marquee-inner">
+        <div class="marquee-content">
+          <span>PYTHON</span> <span class="dot">·</span>
+          <span>JAVA</span> <span class="dot">·</span>
+          <span>FASTAPI</span> <span class="dot">·</span>
+          <span>FLASK</span> <span class="dot">·</span>
+          <span>SYSTEM DESIGN</span> <span class="dot">·</span>
+          <span>SQL</span> <span class="dot">·</span>
+          <span>DEVOPS</span> <span class="dot">·</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>PYTHON</span> <span class="dot">·</span>
+          <span>JAVA</span> <span class="dot">·</span>
+          <span>FASTAPI</span> <span class="dot">·</span>
+          <span>FLASK</span> <span class="dot">·</span>
+          <span>SYSTEM DESIGN</span> <span class="dot">·</span>
+          <span>SQL</span> <span class="dot">·</span>
+          <span>DEVOPS</span> <span class="dot">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK SECTION -->
+    <section class="work" id="work">
+      <div class="container">
+        <h2 class="section-title">SELECTED WORK</h2>
+        
+        <div class="projects-list">
+          <!-- Project 1 -->
+          <a href="https://skies-weather.netlify.app/" target="_blank" class="project-item">
+            <div class="project-info">
+              <span class="project-number">01</span>
+              <h3 class="project-name">SKIES WEATHER</h3>
+              <p class="project-role">WEB APPLICATION</p>
+            </div>
+            <div class="project-visual bg-gradient-1"></div>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="https://number-guesserrr.netlify.app/" target="_blank" class="project-item">
+            <div class="project-info">
+              <span class="project-number">02</span>
+              <h3 class="project-name">NUMBER GUESSER</h3>
+              <p class="project-role">BROWSER GAME</p>
+            </div>
+            <div class="project-visual bg-gradient-2"></div>
+          </a>
+
+          <!-- Project 3 -->
+          <a href="https://taskmanager-my.netlify.app/" target="_blank" class="project-item">
+            <div class="project-info">
+              <span class="project-number">03</span>
+              <h3 class="project-name">TASK MANAGER</h3>
+              <p class="project-role">PRODUCTIVITY APP</p>
+            </div>
+            <div class="project-visual bg-gradient-3"></div>
+          </a>
+
+          <!-- Project 4 -->
+          <a href="https://samurai-fight.netlify.app/" target="_blank" class="project-item">
+            <div class="project-info">
+              <span class="project-number">04</span>
+              <h3 class="project-name">SAMURAI FIGHT</h3>
+              <p class="project-role">MULTIPLAYER GAME</p>
+            </div>
+            <div class="project-visual bg-gradient-4"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <h2 class="contact-title">GOT A PROJECT?</h2>
+        <a href="mailto:dlprt1308@gmail.com" class="big-mail-link">LET'S TALK <span class="arrow">↗</span></a>
+        
+        <div class="footer-bottom">
+          <p>© 2026 DILPREET SINGH SAINI</p>
+          <div class="social-links">
+            <a href="https://github.com/d1lprt" target="_blank" class="magnetic">GITHUB</a>
+            <a href="https://www.linkedin.com/in/dilpreet-singh-saini/" target="_blank" class="magnetic">LINKEDIN</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
