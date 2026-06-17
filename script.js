@@ -122,14 +122,21 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   });
 
-  // 6. Magnetic Effect for Social Links (Optional Premium Touch)
+  // 6. Magnetic Effect for Social Links
   const magneticItems = document.querySelectorAll('.magnetic');
   
   magneticItems.forEach(item => {
     item.addEventListener('mousemove', (e) => {
       const position = item.getBoundingClientRect();
-      const x = e.pageX - position.left - position.width / 2;
-      const y = e.pageY - position.top - position.height / 2;
+      const currentX = gsap.getProperty(item, "x") || 0;
+      const currentY = gsap.getProperty(item, "y") || 0;
+      
+      // Calculate original center by ignoring current translation
+      const origLeft = position.left - currentX;
+      const origTop = position.top - currentY;
+
+      const x = e.clientX - origLeft - position.width / 2;
+      const y = e.clientY - origTop - position.height / 2;
       
       gsap.to(item, {
         x: x * 0.3,
