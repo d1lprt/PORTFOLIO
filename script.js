@@ -87,7 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 4. About Text Reveal Animation
   // Use SplitType to split the text into words
-  const aboutText = new SplitType('.about-text', { types: 'lines, words' });
+  // Words only (no fixed line wrappers) so text wraps naturally and never leaves orphan words
+  const aboutText = new SplitType('.about-text', { types: 'words' });
   
   gsap.to(aboutText.words, {
     opacity: 1,
@@ -101,6 +102,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+
+  // Recalculate scroll positions once fonts have loaded (text height changes)
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => ScrollTrigger.refresh());
+  }
 
   // 5. Projects Reveal
   const projects = document.querySelectorAll('.project-item');
