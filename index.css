@@ -557,8 +557,8 @@ a {
   .hero { height: 100vh; height: 100svh; min-height: 560px; }
   .hero-content { margin-top: 6vh; }
   .hero-title {
-    font-size: 13vw;
-    line-height: 0.92;
+    font-size: 10vw;
+    line-height: 0.95;
     letter-spacing: -0.02em;
   }
   .hero-bottom { margin-top: 4vh; padding-top: 1.25rem; }
@@ -572,7 +572,7 @@ a {
   .contact-title { margin-bottom: 1.25rem; font-size: 1rem; }
 
   /* Smaller marquee */
-  .marquee-section { padding: 1.5vh 0; }
+  .marquee-section { padding: 1.5vh 0; margin: 5vh 0; }
   .marquee-content { gap: 1rem; padding: 0 0.5rem; }
   .marquee-content span { font-size: 1.4rem; }
   .marquee-content .dot { font-size: 0.7rem; }
@@ -586,12 +586,22 @@ a {
   .project-role { font-size: 1rem; }
   .project-btn { font-size: 0.85rem; padding: 1.1rem 1.8rem; }
 
-  /* Work section: no hover / tap effects */
-  .project-name,
-  .project-item:hover .project-name {
+  /* Work section: buttons never move; heading turns orange on hover / tap */
+  .project-name { transform: none; transition: color 0.3s ease; }
+  .project-item:hover .project-name,
+  .project-item:focus-within .project-name,
+  .project-item:active .project-name {
     transform: none;
-    color: inherit;
+    color: var(--accent);
+  }
+  .project-actions,
+  .project-item:hover .project-actions,
+  .project-item:focus-within .project-actions {
+    position: static;
+    transform: none;
     transition: none;
+    opacity: 1;
+    pointer-events: auto;
   }
   .project-btn:hover {
     background: var(--accent);
